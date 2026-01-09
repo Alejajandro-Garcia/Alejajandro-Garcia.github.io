@@ -15,12 +15,7 @@ export default function StickyHeader() {
     <div className="navbar fixed w-[calc(100vw)] z-40 bg-black/60">
       {/* LEFT */}
       <div className="navbar-start">
-        <Image
-          src="Alejandro-Garcia-Portfolio/cow.svg"
-          alt="cow PFP"
-          width={70}
-          height={70}
-        />
+        <Image src="/cow.svg" alt="cow PFP" width={70} height={70} />
         <span className="whitespace-nowrap text-xl md:text-4xl pl-3 md:pl-5">
           Alejandro Garcia
         </span>

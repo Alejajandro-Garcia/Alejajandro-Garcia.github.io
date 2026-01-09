@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: "/Alejandro-Garcia-Portfolio",
   output: "export",
   reactStrictMode: true,
   images: {

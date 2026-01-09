@@ -31,7 +31,7 @@ export default function IntroCard() {
         <div className="flex flex-row mt-4">
           <button className="bg-white text-black rounded-2xl w-28 h-11 mt-1 mx-4 text-xl">
             <a
-              href="Alejandro-Garcia-Portfolio/Alejandro_Garcia_CV.pdf"
+              href="/Alejandro_Garcia_CV.pdf"
               download="AlejandroGarciaResume.pdf"
               target="_blank"
             >
@@ -47,7 +47,7 @@ export default function IntroCard() {
             }}
           >
             <Image
-              src="Alejandro-Garcia-Portfolio/github.svg"
+              src="/github.svg"
               width={45}
               height={45}
               alt="Github"
@@ -59,7 +59,7 @@ export default function IntroCard() {
             target="_blank"
           >
             <Image
-              src="Alejandro-Garcia-Portfolio/linkedin.svg"
+              src="/linkedin.svg"
               width={50}
               height={50}
               alt="LinkedIn"
@@ -68,7 +68,7 @@ export default function IntroCard() {
           </a>
           <a href="mailto:josealegar19@gmail.com" target="_blank">
             <Image
-              src="Alejandro-Garcia-Portfolio/mail.svg"
+              src="/mail.svg"
               width={50}
               height={50}
               alt="Email"
@@ -94,7 +94,7 @@ export default function IntroCard() {
       <div className="hidden md:flex flex-col mr-auto ml-10 justify-center">
         <Image
           alt="pfp"
-          src="Alejandro-Garcia-Portfolio/pfp.jpg"
+          src="/pfp.jpg"
           width={450}
           height={450}
           className="mask mask-circle"

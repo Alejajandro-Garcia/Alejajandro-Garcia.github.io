@@ -8,7 +8,7 @@ import SkillsSection from "./components/skills-section";
 
 export default function Home() {
   return (
-    <div className="bg-black/70">
+    <div className="bg-black/70 min-h-screen">
       <BouncingBubbles />
       <div className="z-10">
         <StickyHeader />
