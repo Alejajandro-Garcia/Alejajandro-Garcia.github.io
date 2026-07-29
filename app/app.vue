@@ -1,3 +1,3 @@
 <template>
-  <div>MEOW</div>
+  <div>meow</div>
 </template>
