@@ -1,4 +1,4 @@
-# Nuxt Minimal Starter
+# Alejandro Portfolio Code
 
 Portfolio Website for myself which can be viewed [here.](https://alejajandro-garcia.github.io/)
 
