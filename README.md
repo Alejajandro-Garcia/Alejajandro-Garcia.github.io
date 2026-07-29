@@ -1,7 +1,75 @@
-Portfolio repo for Alejandro Garcia which can viewed [here](https://alejajandro-garcia.github.io/).
+# Nuxt Minimal Starter
 
-For any inquiries about job openings, services, or simply to connect please contact through the following:
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-- [LinkedIn](https://www.linkedin.com/in/alejandro-garcia-1022441a1/)
-- Email: [josealegar19@gmail.com](mailto:josealegar19@gmail.com)
-- Mobile: 619-490-8254
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
