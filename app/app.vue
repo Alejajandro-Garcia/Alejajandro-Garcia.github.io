@@ -1,3 +1,3 @@
 <template>
-  <div>meow</div>
+  <div class="crt">[meow]</div>
 </template>
