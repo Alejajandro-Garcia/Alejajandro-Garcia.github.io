@@ -19,10 +19,16 @@ import CRTOverlay from "./components/CRTOverlay.vue";
           <p style="margin: 5px 0">[about]</p>
           <p style="margin: 5px 0">[experience]</p>
           <p style="margin: 5px 0">[resume]</p>
-          <div style="display: flex; background-color: blue">
-            <img src="/img/linked-in.png" />
-            <img src="/img/github.png" />
-            <img src="/img/email.png" />
+          <div style="display: flex; align-items: center">
+            <img style="margin: 0 8px" src="/img/linked-in.png" />
+            <img
+              style="margin: 0 8px; height: 26px; width: 28px"
+              src="/img/github.png"
+            />
+            <img
+              style="margin: 0 8px; height: 28px; width: 28px"
+              src="/img/email.png"
+            />
           </div>
         </div>
       </div>
