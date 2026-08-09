@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "EnkaDotMincho24";
-  src: url("/fonts/EnkaDotMincho24.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: F25_Bank_Printer;
+  src: url("/fonts/EnkaDotGothic24.ttf") format("truetype");
+  font-weight: lighter;
   font-display: swap;
 }
 
 html {
-  font-family: "EnkaDotMincho24";
-  font-size: 1.6em;
-  color: white;
-  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  color: rgb(225, 225, 225);
+  background-color: rgb(11, 11, 11);
+  background-blend-mode: lighten;
   background-image: url("/img/Texturelabs_Grunge_319L.jpg");
   background-size: cover;
   background-repeat: no-repeat;
