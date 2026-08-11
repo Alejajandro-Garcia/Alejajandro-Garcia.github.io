@@ -12,9 +12,18 @@ import { MODES } from "../modes";
       </button>
       <button @click="$emit('selectMode', MODES.RESUME)">[resume]</button>
       <div style="display: flex; align-items: center">
-        <img src="/img/linked-in.png" />
-        <img style="height: 26px" src="/img/github.png" />
-        <img src="/img/email.png" />
+        <a
+          href="https://www.linkedin.com/in/alejandro-garcia-1022441a1/"
+          target="_blank"
+        >
+          <img src="/img/linked-in.png"
+        /></a>
+        <a href="https://github.com/Alejajandro-Garcia" target="_blank">
+          <img style="height: 26px" src="/img/github.png"
+        /></a>
+        <a href="mailto:josealegar19@gmail.com">
+          <img src="/img/email.png"
+        /></a>
       </div>
     </div>
   </div>
