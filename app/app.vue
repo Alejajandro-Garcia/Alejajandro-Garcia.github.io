@@ -1,43 +1,40 @@
-<script setup>
+<script setup lang="ts">
+import { ref } from "vue";
 import CRTOverlay from "./components/CRTOverlay.vue";
+import NavMenu from "./components/NavMenu.vue";
+
+const MODES = {
+  HOME: "home",
+  ABOUT: "about",
+  EXPERIENCE: "experience",
+  RESUME: "resume",
+} as const;
+
+type Mode = (typeof MODES)[keyof typeof MODES];
+
+const selectedMode = ref<Mode>(MODES.HOME);
+
+const selectMode = (mode: Mode) => {
+  selectedMode.value = mode;
+};
 </script>
 <template>
   <CRTOverlay>
-    <div
-      style="display: grid; grid-template-columns: 1fr 1fr; min-height: 100dvh"
-    >
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: end;
-          padding: 0 40px;
-        "
-      >
-        <div style="display: flex; flex-direction: column; align-items: end">
-          <p style="margin: 5px 0; font-size: 1.6em">[alejandro garcia]</p>
-          <p style="margin: 5px 0">[about]</p>
-          <p style="margin: 5px 0">[experience]</p>
-          <p style="margin: 5px 0">[resume]</p>
-          <div style="display: flex; align-items: center">
-            <img style="margin: 0 8px" src="/img/linked-in.png" />
-            <img
-              style="margin: 0 8px; height: 26px; width: 28px"
-              src="/img/github.png"
-            />
-            <img
-              style="margin: 0 8px; height: 28px; width: 28px"
-              src="/img/email.png"
-            />
-          </div>
-        </div>
+    <template #left>
+      <NavMenu v-if="selectedMode === MODES.HOME" @select-mode="selectMode" />
+      <div v-if="selectedMode === MODES.ABOUT" @select-mode="selectMode">
+        MEOW
       </div>
+    </template>
+
+    <template #right>
       <div style="display: flex; align-items: center">
         <img
           height="500"
           src="/img/dithering-effect.png"
           alt="Berkeley Hotel Picture"
         />
-      </div></div
-  ></CRTOverlay>
+      </div>
+    </template>
+  </CRTOverlay>
 </template>
