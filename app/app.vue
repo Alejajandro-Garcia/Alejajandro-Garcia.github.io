@@ -3,6 +3,7 @@ import { ref } from "vue";
 import CRTOverlay from "./components/CRTOverlay.vue";
 import NavMenu from "./components/NavMenu.vue";
 import AboutSection from "./components/AboutSection.vue";
+import AboutExperienceContainer from "./components/AboutExperienceContainer.vue";
 
 const MODES = {
   HOME: "home",
@@ -23,10 +24,12 @@ const selectMode = (mode: Mode) => {
   <CRTOverlay>
     <template #left>
       <NavMenu v-if="selectedMode === MODES.HOME" @select-mode="selectMode" />
-      <AboutSection
+      <AboutExperienceContainer
         v-if="selectedMode === MODES.ABOUT"
         @select-mode="selectMode"
-      />
+      >
+        <AboutSection />
+      </AboutExperienceContainer>
     </template>
 
     <template #right>
