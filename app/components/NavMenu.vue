@@ -10,7 +10,7 @@ import { MODES } from "../modes";
       <button @click="$emit('selectMode', MODES.EXPERIENCE)">
         [experience]
       </button>
-      <button @click="$emit('selectMode', MODES.RESUME)">[resume]</button>
+      <a href="/files/Alejandro_Garcia_CV.pdf" download>[resume]</a>
       <div style="display: flex; align-items: center">
         <a
           href="https://www.linkedin.com/in/alejandro-garcia-1022441a1/"

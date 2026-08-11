@@ -11,9 +11,11 @@ import { MODES } from "../modes";
         <button @click="$emit('selectMode', MODES.EXPERIENCE)">
           [experience]
         </button>
-        <button @click="$emit('selectMode', MODES.RESUME)">[resume]</button>
+        <a href="/files/Alejandro_Garcia_CV.pdf" download>[resume]</a>
       </div>
-      <slot />
+      <div class="panel__body">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -31,6 +33,7 @@ import { MODES } from "../modes";
   flex-direction: column;
   justify-content: flex-end;
   max-width: 20vw;
+  width: 20vw;
   height: var(--media-h);
   overflow-y: auto;
 }
@@ -38,5 +41,12 @@ import { MODES } from "../modes";
   display: flex;
   justify-content: space-evenly;
   padding: 10px 0;
+}
+.panel__body {
+  border-style: ridge;
+  padding: 10px 16px;
+  font-size: 0.6em;
+  line-height: 1.3em;
+  text-shadow: none;
 }
 </style>

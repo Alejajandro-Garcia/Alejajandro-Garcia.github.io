@@ -31,3 +31,8 @@ button:hover {
   background-color: wheat;
   color: black;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
