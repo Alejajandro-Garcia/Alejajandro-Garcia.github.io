@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: "Courier New", Courier, monospace;
+  font-family: F25_Bank_Printer;
   font-size: 1.4rem;
   color: rgb(225, 225, 225);
   background-color: rgb(11, 11, 11);
@@ -14,4 +14,20 @@ html {
   background-image: url("/img/Texturelabs_Grunge_319L.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  cursor: pointer;
+  background-color: wheat;
+  color: black;
 }
