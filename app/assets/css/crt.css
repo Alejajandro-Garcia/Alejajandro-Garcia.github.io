@@ -233,4 +233,8 @@
   grid-template-columns: 1fr 1fr;
   min-height: 100dvh;
   animation: textShadow 1.6s infinite;
+
+  /* Shared vertical extent for the two panes. Both are centered in the same
+     grid row, so equal heights means their top and bottom edges align. */
+  --media-h: min(600px, 78dvh);
 }
