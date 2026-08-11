@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import CRTOverlay from "./components/CRTOverlay.vue";
 import NavMenu from "./components/NavMenu.vue";
+import AboutSection from "./components/AboutSection.vue";
 
 const MODES = {
   HOME: "home",
@@ -22,15 +23,16 @@ const selectMode = (mode: Mode) => {
   <CRTOverlay>
     <template #left>
       <NavMenu v-if="selectedMode === MODES.HOME" @select-mode="selectMode" />
-      <div v-if="selectedMode === MODES.ABOUT" @select-mode="selectMode">
-        MEOW
-      </div>
+      <AboutSection
+        v-if="selectedMode === MODES.ABOUT"
+        @select-mode="selectMode"
+      />
     </template>
 
     <template #right>
-      <div style="display: flex; align-items: center">
+      <div class="hero">
         <img
-          height="500"
+          class="hero__img"
           src="/img/dithering-effect.png"
           alt="Berkeley Hotel Picture"
         />
@@ -38,3 +40,14 @@ const selectMode = (mode: Mode) => {
     </template>
   </CRTOverlay>
 </template>
+
+<style scoped>
+.hero {
+  display: flex;
+  align-items: center;
+}
+.hero__img {
+  height: var(--media-h);
+  width: auto;
+}
+</style>
