@@ -10,7 +10,9 @@ import { MODES } from "../modes";
       <button @click="$emit('selectMode', MODES.EXPERIENCE)">
         [experience]
       </button>
-      <a href="/files/Alejandro_Garcia_CV.pdf" download>[resume]</a>
+      <a class="resume" href="/files/Alejandro_Garcia_CV.pdf" download
+        >[resume]</a
+      >
       <div style="display: flex; align-items: center">
         <a
           href="https://www.linkedin.com/in/alejandro-garcia-1022441a1/"
@@ -29,7 +31,7 @@ import { MODES } from "../modes";
   </div>
 </template>
 
-<style>
+<style scoped>
 .grid-container {
   display: flex;
   align-items: center;
@@ -41,6 +43,10 @@ import { MODES } from "../modes";
   flex-direction: column;
   align-items: end;
   gap: 15px;
+}
+.resume:hover {
+  background-color: wheat;
+  color: black;
 }
 img {
   margin: 0 0 0 8px;
