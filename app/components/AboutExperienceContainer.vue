@@ -38,7 +38,7 @@ import { MODES } from "../modes";
 }
 .panel__nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 10px 0;
 }
 .panel__body {
