@@ -3,15 +3,15 @@ import experience from "../experience.json";
 </script>
 
 <template>
-  <div style="display: flex; flex-direction: row">
+  <div class="experience-container">
     <div
       v-for="project in experience"
       :key="project.project_name"
-      style="padding: 6px 4px; width: 48%; border-style: dashed"
+      class="project"
     >
-      <div style="height: 100px; width: 250px">
+      <div class="img-container">
         <img
-          style="width: 100%; height: 100%; object-fit: contain"
+          class="project-img"
           :src="project.image_src"
           :alt="project.alt_image"
         />
@@ -19,20 +19,36 @@ import experience from "../experience.json";
       <h3>{{ project.project_name }}</h3>
       <p class="dates">{{ project.start_date }} - {{ project.end_date }}</p>
       <p>{{ project.summary }}</p>
-      <div class="technologies">
-        <h4
+      <ul class="technologies">
+        <li
           v-for="skill in project.technologies"
           :key="skill"
-          style="font-weight: 400; margin: 0"
         >
           {{ skill }}
-        </h4>
-      </div>
+      </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped>
+.experience-container {
+  display: flex;
+  flex-direction: row;
+}
+.project {
+  padding: 6px 4px;
+  width: 48%;
+  border-style: dashed
+}
+.img-container {
+  max-height: 200px;
+  height: auto; 
+  width: 100%;
+}
+.project-img {
+width: 100%; height: 100%; object-fit: contain
+}
 .dates {
   margin-bottom: 8px;
 }
@@ -43,7 +59,9 @@ p {
   margin: 0;
 }
 .technologies {
-  margin-top: 10px;
+  list-style: none;
+  margin-top: 10px 0 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
