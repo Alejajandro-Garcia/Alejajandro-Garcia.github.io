@@ -32,8 +32,7 @@ import { MODES } from "../modes";
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 20vw;
-  width: 20vw;
+  max-width: 30vw;
   height: var(--media-h);
   overflow-y: auto;
 }
@@ -48,5 +47,6 @@ import { MODES } from "../modes";
   font-size: 0.6em;
   line-height: 1.3em;
   text-shadow: none;
+  min-height: 20dvh;
 }
 </style>

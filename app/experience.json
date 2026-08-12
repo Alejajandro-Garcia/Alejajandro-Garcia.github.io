@@ -1,0 +1,35 @@
+[
+  {
+    "project_name": "Bytekitchen (Acquired by Lightspeed)",
+    "start_date": "November 2024",
+    "end_date": "November 2025",
+    "summary": "He had kept the letter in the drawer for six months without opening it. He knew the handwriting. He had recognised it the moment the envelope arrived, and that recognition had been enough to stop him. On the morning of the seventh month, he sat down at the table, opened it, and read it twice.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "React Native",
+      "Typescript",
+      "AWS",
+      "Node",
+      "PostgreSQL"
+    ],
+    "image_src": "/img/byte-kitchen.png",
+    "alt_image": "Lightspeed and Bytekitchen Logo"
+  },
+  {
+    "project_name": "Nisum (Contractor Safeway/Albertsons)",
+    "start_date": "July 2022",
+    "end_date": "June 2024",
+    "summary": "He had kept the letter in the drawer for six months without opening it. He knew the handwriting. He had recognised it the moment the envelope arrived, and that recognition had been enough to stop him. On the morning of the seventh month, he sat down at the table, opened it, and read it twice.",
+    "technologies": [
+      "Java",
+      "Python",
+      "Spring Boot",
+      "Azure",
+      "MongoDB",
+      "PostgreSQL"
+    ],
+    "image_src": "",
+    "alt_image": "Nisum Logo"
+  }
+]
