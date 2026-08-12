@@ -42,8 +42,7 @@ import experience from "../experience.json";
   border-style: dashed
 }
 .img-container {
-  max-height: 200px;
-  height: auto; 
+  height: 200px;
   width: 100%;
 }
 .project-img {
@@ -60,7 +59,7 @@ p {
 }
 .technologies {
   list-style: none;
-  margin-top: 10px 0 0;
+  margin-top: 10px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
