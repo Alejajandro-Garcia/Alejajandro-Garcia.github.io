@@ -21,11 +21,12 @@ import experience from "../experience.json";
       <p>{{ project.summary }}</p>
       <ul class="technologies">
         <li
+          style="line-height: 0.6em"
           v-for="skill in project.technologies"
           :key="skill"
         >
           {{ skill }}
-      </li>
+        </li>
       </ul>
     </div>
   </div>
@@ -39,14 +40,18 @@ import experience from "../experience.json";
 .project {
   padding: 6px 4px;
   width: 48%;
-  border-style: dashed
+  border-style: dashed;
 }
+
 .img-container {
   height: 200px;
   width: 100%;
 }
+
 .project-img {
-width: 100%; height: 100%; object-fit: contain
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .dates {
   margin-bottom: 8px;
@@ -64,5 +69,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+  .img-container {
+    height: 100px;
+    width: 100%;
+  }
 }
 </style>

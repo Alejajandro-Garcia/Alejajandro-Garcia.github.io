@@ -32,7 +32,7 @@ import { MODES } from "../modes";
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 30vw;
+  max-width: 35vw;
   height: var(--media-h);
   overflow-y: auto;
 }
@@ -44,9 +44,10 @@ import { MODES } from "../modes";
 .panel__body {
   border-style: ridge;
   padding: 10px 16px;
-  font-size: 0.6em;
-  line-height: 1.3em;
+  font-size: 0.6rem;
+  line-height: 1rem;
   text-shadow: none;
   min-height: 20dvh;
+  overflow: scroll;
 }
 </style>
