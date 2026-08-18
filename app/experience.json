@@ -1,5 +1,12 @@
 [
   {
+    "project_name": "Patina",
+    "start_date": "May 2026",
+    "end_date": "Current",
+    "summary": "He had kept the letter in the drawer for six months without opening it. He knew the handwriting. He had recognised it the moment the envelope arrived, and that recognition had been enough to stop him. On the morning of the seventh month, he sat down at the table, opened it, and read it twice.",
+    "technologies": ["React Native", "SQLite", "Firebase", "Expo", "Figma"]
+  },
+  {
     "project_name": "Bytekitchen (Acquired by Lightspeed)",
     "start_date": "November 2024",
     "end_date": "November 2025",
