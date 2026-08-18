@@ -44,10 +44,10 @@ import { MODES } from "../modes";
 .panel__body {
   border-style: ridge;
   padding: 10px 16px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   text-shadow: none;
-  min-height: 20dvh;
+  flex-grow: 1;
   overflow: scroll;
 }
 </style>

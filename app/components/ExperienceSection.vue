@@ -21,7 +21,7 @@ import experience from "../experience.json";
       <p>{{ project.summary }}</p>
       <ul class="technologies">
         <li
-          style="line-height: 0.6em"
+          style="margin-right: 0.4em"
           v-for="skill in project.technologies"
           :key="skill"
         >
@@ -66,7 +66,7 @@ p {
 }
 .technologies {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 16px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
