@@ -35,11 +35,13 @@ import experience from "../experience.json";
 <style scoped>
 .experience-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 10px;
 }
+
 .project {
   padding: 6px 4px;
-  width: 48%;
+  min-width: 48%;
   border-style: dashed;
 }
 

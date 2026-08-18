@@ -32,7 +32,7 @@ import { MODES } from "../modes";
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 35vw;
+  max-width: 40vw;
   height: var(--media-h);
   overflow-y: auto;
 }

@@ -15,15 +15,20 @@ import { MODES } from "../modes";
       >
       <div style="display: flex; align-items: center">
         <a
+          class="img-link"
           href="https://www.linkedin.com/in/alejandro-garcia-1022441a1/"
           target="_blank"
         >
           <img src="/img/linked-in.png"
         /></a>
-        <a href="https://github.com/Alejajandro-Garcia" target="_blank">
+        <a
+          class="img-link"
+          href="https://github.com/Alejajandro-Garcia"
+          target="_blank"
+        >
           <img style="height: 26px" src="/img/github.png"
         /></a>
-        <a href="mailto:josealegar19@gmail.com">
+        <a class="img-link" href="mailto:josealegar19@gmail.com">
           <img src="/img/email.png"
         /></a>
       </div>
@@ -50,5 +55,11 @@ import { MODES } from "../modes";
 }
 img {
   margin: 0 0 0 8px;
+}
+img:hover {
+  background-color: wheat;
+}
+.img-link:hover {
+  background-color: transparent;
 }
 </style>
