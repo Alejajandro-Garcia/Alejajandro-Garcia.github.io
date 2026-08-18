@@ -191,6 +191,95 @@
       0 0 3px;
   }
 }
+/* Image counterpart to textShadow. Same offsets and same 1.6s period, so
+   icons tear in lockstep with the text. drop-shadow() traces the alpha
+   channel, so these fringe the glyph silhouette rather than a box. */
+@keyframes dropShadow {
+  0% {
+    filter: drop-shadow(0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  5% {
+    filter: drop-shadow(2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  10% {
+    filter: drop-shadow(0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  15% {
+    filter: drop-shadow(0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  20% {
+    filter: drop-shadow(3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  25% {
+    filter: drop-shadow(1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-1.6125630401149584px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  30% {
+    filter: drop-shadow(0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  35% {
+    filter: drop-shadow(3.896914047650351px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-3.896914047650351px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  40% {
+    filter: drop-shadow(3.870905614848819px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-3.870905614848819px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  45% {
+    filter: drop-shadow(2.231056963361899px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.231056963361899px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  55% {
+    filter: drop-shadow(2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  60% {
+    filter: drop-shadow(2.202193051050636px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.202193051050636px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  65% {
+    filter: drop-shadow(2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  70% {
+    filter: drop-shadow(0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  75% {
+    filter: drop-shadow(1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  80% {
+    filter: drop-shadow(0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  85% {
+    filter: drop-shadow(0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  90% {
+    filter: drop-shadow(3.443339761481782px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-3.443339761481782px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  95% {
+    filter: drop-shadow(2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3));
+  }
+  100% {
+    filter: drop-shadow(2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5))
+      drop-shadow(-2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3));
+  }
+}
 .crt::after {
   content: " ";
   display: block;
@@ -234,5 +323,5 @@
   min-height: 100dvh;
   animation: textShadow 1.6s infinite;
 
-  --media-h: 85dvh;
+  --media-h: 80dvh;
 }
