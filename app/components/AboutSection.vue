@@ -1,4 +1,5 @@
 <template>
+  <p class="about">
   The fog was as thick as pea soup. This was a problem. Gary was driving but
   couldn't see a thing in front of him. He knew he should stop, but the road was
   narrow so if he did, it would be right in the center of the road. He was sure
@@ -15,5 +16,12 @@
   listen when you are talking with someone? I have a friend who listens in an
   unforgiving way. She actually takes every word you say as being something
   important and when you have a friend that listens like that, words take on a
-  whole new meaning.
+  whole new meaning.</p>
 </template>
+
+<style lang="css" scoped>
+.about {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+</style>
